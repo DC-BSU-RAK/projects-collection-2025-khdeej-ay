@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flavour Note</string>
+
+    <string name="close_button_desc">Close instructions</string>
+    <string name="info_button_desc">Open instructions</string>
+    <string name="create_button_desc">Create button</string>
+    <string name="view_saved_recipe">Saved button</string>
+    <string name="view_home_screen">Home button</string>
+
+</resources>
