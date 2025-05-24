@@ -1,0 +1,17 @@
+<resources>
+
+    <!--  app name  -->
+    <string name="app_name">Pawfect Match</string>
+
+    <!--  string descriptions  -->
+    <string name="info_button_desc">Show app instructions</string>
+
+    <string name="house_button_desc">Select house as living situation</string>
+    <string name="apartment_button_desc">Select apartment as living situation</string>
+    <string name="sharing_button_desc">Select shared housing as living situation</string>
+    <string name="reading_button_desc">Select reading as preferred hobby</string>
+    <string name="painting_button_desc">Select painting as preferred hobby</string>
+    <string name="hiking_button_desc">Select hiking as preferred hobby</string>
+
+    <string name="close_button_desc">Close instructions</string>
+</resources>
