@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preferences_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreferencesActivity">
+
+    <ImageView
+        android:id="@+id/preferences"
+        android:layout_width="490dp"
+        android:layout_height="590dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/preferences_popup" />
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/close_button_desc"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/preferences"
+        app:layout_constraintEnd_toEndOf="@+id/preferences"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="@+id/preferences"
+        app:layout_constraintTop_toTopOf="@+id/preferences"
+        app:layout_constraintVertical_bias="0.132"
+        app:srcCompat="@drawable/close" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/brown"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/preferences"
+        app:layout_constraintEnd_toEndOf="@+id/preferences"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/preferences"
+        app:layout_constraintTop_toTopOf="@+id/preferences"
+        app:layout_constraintVertical_bias="0.406" />
+
+
+    <EditText
+        android:id="@+id/edit_servings"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:hint="e.g. 4"
+        android:inputType="number"
+        android:textColor="@color/brown"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/preferences"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/preferences"
+        app:layout_constraintTop_toTopOf="@+id/preferences"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/view_saved_recipe"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736"
+        app:srcCompat="@drawable/button" />
+
+    <TextView
+        android:id="@+id/save_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kavivanar"
+        android:text="Save"
+        android:textColor="@color/cream"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/save_button"
+        app:layout_constraintEnd_toEndOf="@+id/save_button"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/save_button"
+        app:layout_constraintTop_toTopOf="@+id/save_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

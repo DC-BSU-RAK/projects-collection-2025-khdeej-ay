@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".CardActivity">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/kavivanar"
+        android:text="Saved"
+        android:textColor="@color/maroon"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  Recipe Card  -->
+
+    <ImageView
+        android:id="@+id/card"
+        android:layout_width="324dp"
+        android:layout_height="509dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        app:srcCompat="@drawable/recipe_card" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="232dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/kavivanar"
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="@color/maroon"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card" />
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="Category"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <TextView
+        android:id="@+id/prep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="10 minutes"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintVertical_bias="0.332" />
+
+    <TextView
+        android:id="@+id/cook_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="10 minutes"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/text_category"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <TextView
+        android:id="@+id/text_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="4"
+        android:textColor="@color/brown"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <!--  Button Background  -->
+
+    <!--  Button Text  -->
+
+    <TextView
+        android:id="@+id/text_ingredients"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:maxLines="5"
+        android:minHeight="100dp"
+        android:scrollbars="vertical"
+        android:text="Ingredients"
+        android:textColor="@color/brown"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/text_directions"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:maxLines="10"
+        android:minHeight="100dp"
+        android:scrollbars="vertical"
+        android:text="Directions"
+        android:textColor="@color/brown"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="@+id/card"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="@+id/card"
+        app:layout_constraintVertical_bias="0.782" />
+
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="155dp"
+        android:layout_height="136dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/view_home_screen"
+        android:padding="2dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/button" />
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kavivanar"
+        android:text="Home"
+        android:textColor="@color/cream"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_button"
+        app:layout_constraintEnd_toEndOf="@+id/home_button"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/home_button"
+        app:layout_constraintTop_toTopOf="@+id/home_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
